@@ -6,7 +6,8 @@ FROM booking AS b
 SELECT *
 FROM property AS p
     LEFT JOIN review AS r
-        ON p.property_id = r.property_id;
+        ON p.property_id = r.property_id
+ORDER BY property_id;
 
 SELECT *
 FROM users As u 
