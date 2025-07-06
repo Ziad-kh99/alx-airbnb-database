@@ -82,3 +82,5 @@ JOIN "user" u ON b.guest_id = u.user_id
 JOIN property p ON b.property_id = p.property_id
 LEFT JOIN payment pay ON pay.booking_id = b.booking_id
 WHERE b.status = 'confirmed'; -- Optional filter to improve performance
+
+-- AND
