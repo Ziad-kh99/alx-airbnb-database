@@ -10,3 +10,5 @@ SELECT
 FROM property p
 LEFT JOIN booking b ON b.property_id = p.property_id
 GROUP BY p.property_id, p.name;
+
+-- ROW_NUMBER()
